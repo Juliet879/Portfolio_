@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/images/Background.jpg);    
+    color: white;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}nav{
+    margin-left: 35%;
+    /* margin-top: 20px; */
+}
+.navbar{
+    padding-top: 15px;
+    position: sticky;
+    z-index: 9999;
+}
+nav ul li {
+    display: inline;
+
+}
+nav ul li a {
+    justify-content: space-between;
+    padding:10px 20px;
+    text-decoration: none;
+    padding-right: 10px;
+    color: rgb(243, 247, 245);
+
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #00e9a300;
+    box-shadow: 10px 5px 30px rgba(0,255,128,0.4);
+}
+.active{
+    border-bottom: 2px solid transparent;
+    box-shadow: 5px 10px 30px rgba(0,255,128,0.4);
+}
+
+
+
+/* home section */
+.heading{
+    display: flex;
+}
+.land-words{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+#word1{
+    font-size: 13px;
+}
+#word2{
+    font-size: 40px;
+}
+#word3{
+    font-size: 40px;
+}
+#land-vector{
+    margin-top: 50px;
+    margin-left: 50%;
+}
+/* skills section */
+.skills{
+    height: 100vh;
+    margin-top: 20%;
+}
+
+#btn_touch{
+    background-color: transparent;
+    padding: 13px;
+    box-shadow: 10px 5px 30px rgba(0,255,128,0.4);
+    border-radius: 5px;
+}
+#btn_touch:hover{
+
+}
+
+/* about section */
+.about{
+    height: 100vh;
+}
+
+/* projects section */
+.projects{
+    height: 100vh;
+}
+
+/* contact section */
+.contact{
+    height: 100vh;
+}
