@@ -1,35 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+*{
+    margin-top: 0;
+    margin-left: 0;
+
+}
 body{
     font-family: 'EB Garamond', serif;    
-    background-image: url(/images/Background.jpg);    
-    height: 30vh;
+
+}
+.home{
+    background-image: url(/images/background.jpg);    
     background-repeat: no-repeat;
     background-size: cover;
+    height: 99vh;
 }
 #header1{
     margin-left: 45%;
     margin-bottom: 50px;
+    color:rgba(13, 14, 13, 0.74) ;
 }
-
 nav{
-    margin-left: 35%;
+    display: flex;
+    width: 100%;
+    background-color: rgb(243, 243, 250);
+}
+.skills{
+    height: 40vh;
+    margin-top: 4%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(20, 20, 22, 0.11);
     /* margin-top: 20px; */
 }
 .navbar{
     padding-top: 15px;
-    position: sticky;
+    position: fixed;
     z-index: 9999;
+}
+nav ul {
+    padding-left: 61%;
+}
+nav p {
+    display: flex;
 }
 nav ul li {
     display: inline;
-
 }
 nav ul li a {
     justify-content: space-between;
     padding:10px 20px;
     text-decoration: none;
-    padding-right: 10px;
-    color: rgb(243, 247, 245);
+    /* padding-right: 10px; */
+    color: rgb(13, 14, 13);
 
 }
 nav ul li a:hover{
@@ -50,7 +76,7 @@ nav ul li a:hover{
 
 }
 .land-words{
-    margin-top: 10%;
+    margin-top: 20%;
     margin-left: 10%;
 }
 #word1{
@@ -63,7 +89,7 @@ nav ul li a:hover{
     font-size: 40px;
 }
 #land-vector{
-    margin-top: 50px;
+    margin-top: 43%;
     margin-left: 50%;
 }
 
@@ -77,10 +103,7 @@ nav ul li a:hover{
 
 } */
 /* skills section */
-.skills{
-    height: 40vh;
-    margin-top: 20%;
-}
+
 .icons{
     display: flex;
     justify-content: space-around;
@@ -121,7 +144,7 @@ nav ul li a:hover{
 /* projects section */
 #header3{
     margin-left: 42%;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
 }
 .my-projects{
     height: 100vh;
@@ -212,6 +235,17 @@ h5{
 /* contact section */
 .contact{
     height: 100vh;
+    background-color: rgb(243, 243, 250);
+    height: 50vh;
+}
+.contact-page{
+    display: flex;
+    border: 1px solid grey;
+    width: 1000px;
+    height: 250px;
+    justify-content: space-around;
+    margin: 10px 280px;
+    padding-top: 3%;
 }
 #header4{
     margin-left: 45%;
