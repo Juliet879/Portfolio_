@@ -2,15 +2,20 @@
 <html>
 
 <head>
-    <title>Portfolio</title>
+    <title> Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
     <section class="home" id="home">
 
         <nav class="navbar">
-            <p>GISEMBA JULIET</p>
+            <p>DEVELO<span>PER</span></p>
 
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -19,62 +24,81 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
+            <div class="menu-btn">
+                <i class="fas fas-bars"></i>
+            </div>
         </nav>
 
 
         <div class="heading">
             <div class="land-words">
-                <p id="word1">Hi my name is</p>
-                <p id="word2">Juliet Gisemba</p>
-                <h1 id="word3">Web/Mobile Developer</h1>
-                <a href=""><button id="btn_touch">Contact me</button></a>
-            </div>
-            <div class="social_icons">
-                <a href="https://github.com/Juliet879"> <img id="social" src="/images/github.svg" alt=""></a>
-                <a href="https://www.behance.net/loggedout/julietgisemba"> <img id="social" src="/images/behance.svg" alt=""></a>
-                <a href="https://twitter.com/?logout=1626925517028"><img id="social" src="/images/twitter.svg" alt=""> </a>
-                <a href="https://www.linkedin.com/signup/cold-join?trk=guest_homepage-basic_nav-header-join"> <img id="social" src="/images/linkedin.svg" alt=""></a>
+                <div id="word1">Hello, my name is</div>
+                <div id="word2">Juliet Gisemba</div>
+                <div id="word3">And I am a <span>Mobile Developer</span></div>
+                <a href="/images/JULIET GISEMBA.CV.pdf"> <button id="resume">DOWNLOAD CV</button></a>
 
             </div>
+
+
         </div>
 
     </section>
 
 
-    <section id="skills" class="skills">
+    <!-- <section id="skills" class="skills">
         <h3 id="header1">Skills</h3>
         <div class="icons">
             <div class="web-icon">
                 <img class="icon-img" src="/images/mobile.PNG" alt="">
-                <p>Mobile Development</p>
+                <p id="skills_icon">Mobile Development</p>
             </div>
             <div class="mobile-icon">
                 <img class="icon-img" src="/images/web-icon.PNG" alt="">
-                <p>Web Development</p>
+                <p id="skills_icon">Web Development</p>
             </div>
             <div class="backend-icon">
                 <img class="icon-img3" src="/images/backend.PNG" alt="">
-                <p>Backend Development</p>
+                <p id="skills_icon">Backend Development</p>
             </div>
         </div>
 
-    </section>
+    </section> -->
 
 
     <section id="about" class="about">
-        <h3 id="header2">About me</h3>
         <div class="my-about">
-            <div class="about-image">
-                <img id="me" src="/images/myImae.png" alt="">
-            </div>
+            <h3 id="header2">About me</h3>
+
             <div class="about-word">
                 <p>
-                    Juliet is a software developer student at AkiraChix interested in the job role of an Intern as a software developer with a get-to-deliver quality product spirit . She has skills in Kotlin, Python, JavaScript and is currently learning django .She is passionate
-                    and aspires to create human centered designs and providing solutions that have community at its core.Her enthusiasm for teamwork has made her learn the importance of breaking big tasks into small manageable and doable tasks.
+                    Juliet is a self-driven curious and versatile software developer ready and willing to try out new skills.She has aspirations and skills to develop human centered designs and providing solutions that have community at its core.Through teamkwork she has
+                    learnt the importance of breaking big tasks into small manageable and doable tasks.
                 </p>
-                <a href="https://docs.google.com/document/d/1R5mpJz7Je-WbPhmPBCWwTTXZQeHkLeRU9GZfOylQx6Q/edit"> <button id="resume">RESUME</button></a>
             </div>
+            <div class="container">
+                <div class="card-deck">
+                    <div class="card-body">
+                        <img id="skills-icon" src="/images/app.svg" alt="">
+                        <h5 class="card-title" id="card-title">Mobile Development</h5>
+                        <p class="card-text  text-center">Develop mobile application in Kotlin on Android Studio</p>
+
+                    </div>
+
+                    <div class="card-body text-center">
+                        <img id="skills-icon" src="/images/web.svg" alt="">
+                        <h5 class="card-title" id="card-title">Web Development</h5>
+                        <p class="card-text">Develop web applications in HTML/CSS,Bootstrap,JavaScript and React on Visual Studio</p>
+
+                    </div>
+
+                    <div class="card-body text-center">
+                        <img id="skills-icon" src="/images/backend.svg" alt="">
+                        <h5 class="card-title" id="card-title">Backend Development</h5>
+                        <p class="card-text">Create database in python and integrate frontend in django</p>
+                    </div>
+                </div>
+            </div>
+
 
 
         </div>
@@ -82,33 +106,52 @@
     </section>
 
 
-    <section id="projects" class="projects">
+    <section class="projects">
         <h3 id="header3">Check Out My Projects</h3>
-        <div class="my_projects">
-            <div class="proje">
-                <img id="project-img1" src="/images/project1.PNG" alt="">
-                <div class="description1">
-                    <h5 id="mboga">Fresh Mboga Ecommerce Website</h5>
-                    <p id="more-description1">Fresh Mboga is an ecommerce website that allows clients to easily purchase variety of fresh groceries</p>
-                    <p id="language">HTML/CSS React</p>
+
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img id="project-image" src="/images/mewdwins.PNG" alt="">
+                        <h5 class="card-text">Medwin's Care</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img id="project-image" src="/images/photoApp.PNG" alt="">
+                        <h5 class="card-text">Picture Patch</h5>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img id="project-image" src="/images/project1.PNG" alt="">
+                        <h5 class="card-text">Fresh Mboga</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img id="project-image" src="/images/notesapp.PNG" alt="">
+                        <h5 class="card-text">Notes App</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img id="project-image" src="/images/project2.PNG" alt="">
+                        <h5 class="card-text">Books Blogs</h5>
+                    </div>
                 </div>
 
-            </div>
-            <div class="proje">
-                <div class="description2">
-                    <h5 id="blog">Books Blog Website</h5>
-                    <p id="more-description2">This website contains few books reviews available and also direct them to the purchase sites</p>
-                    <p id="language2">HTML/CSS React</p>
-                </div>
-                <img id="project-img2" src="/images/project2.PNG" alt="">
-            </div>
-
-            <div class="proje">
-                <img id="project-img3" src="/images/project3.PNG" alt="">
-                <div class="description1">
-                    <h5 id="notes">Notes App</h5>
-                    <p id="more-description3">Notes app is mobile application that enables client to save retrieve their notes.Its is built in Kotlin and saves data in firebase</p>
-                    <p id="language2">Kotlin Firebase</p>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img id="project-image" src="/images/schoolsystem.PNG" alt="">
+                        <h5 class="card-text">School System</h5>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,37 +160,18 @@
 
 
     <div id="contact" class="contact">
-        <h3 id="header4">Contact me</h3>
-        <div class="contact-page">
-            <div class="form">
-                <label for="name">Name</label><br>
-                <input type="text" required><br><br>
-                <label for="email">Email</label><br>
-                <input type="email" required><br><br>
-                <label for="message">Message</label><br>
-                <input type="text" required><br>
-
-                <button type="submit">SEND</button>
-            </div>
-            <div class="social">
-                <div class="contact-details">
-                    <h4>CONTACT DETAILS</h4>
-                    <p>+254 705699879</p>
-                    <p>gisembajuliett@gmail.com</p>
-                    <h4>SOCIAL</h4>
-                    <div class="icons">
-                        <img id="social" src="/images/linkedin.svg" alt="">
-                        <img id="social" src="/images/github.svg" alt="">
-                        <img id="social" src="/images/twitter.svg" alt="">
-                        <img id="social" src="/images/behance.svg" alt="">
-                    </div>
-
-                </div>
-            </div>
-
+        <h3 id="header4">Keep In Touch</h3>
+        <p id="contct-info">Feel free to reach out. I will be glad to connect with you.</p>
+        <div class="icons">
+            <!-- <a href="https://github.com/Juliet879"> <img id="socialC" src="/images/github.svg" alt=""></a> -->
+            <a href="https://www.behance.net/loggedout/julietgisemba"> <img id="socialC" src="/images/email.svg" alt=""></a>
+            <a href="https://twitter.com/?logout=1626925517028"><img id="socialC" src="/images/linkedin-logo.svg" alt=""> </a>
+            <a href="https://www.linkedin.com/signup/cold-join?trk=guest_homepage-basic_nav-header-join"> <img id="socialC" src="/images/twitter (1).svg" alt=""></a>
         </div>
-
     </div>
+    <footer id="footer"><i class="fa fa-copyright" aria-hidden="true">juliet_portfolio@2021</i></footer>
+
+    <script src="/script.js"></script>
 
 </body>
 
