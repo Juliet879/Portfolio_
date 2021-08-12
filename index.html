@@ -3,7 +3,13 @@
 
 <head>
     <title> Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -16,7 +22,7 @@
 
         <nav class="navbar">
             <p>DEVELO<span>PER</span></p>
-
+            <button class="d-none" id="hamburgerBtn">&#9776</button>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -34,7 +40,7 @@
             <div class="land-words">
                 <div id="word1">Hello, my name is</div>
                 <div id="word2">Juliet Gisemba</div>
-                <div id="word3">And I am a <span>Mobile Developer</span></div>
+                <div id="word3">And I am a <span>Software Developer</span></div>
                 <a href="/images/JULIET GISEMBA.CV.pdf"> <button id="resume">DOWNLOAD CV</button></a>
 
             </div>
@@ -43,27 +49,6 @@
         </div>
 
     </section>
-
-
-    <!-- <section id="skills" class="skills">
-        <h3 id="header1">Skills</h3>
-        <div class="icons">
-            <div class="web-icon">
-                <img class="icon-img" src="/images/mobile.PNG" alt="">
-                <p id="skills_icon">Mobile Development</p>
-            </div>
-            <div class="mobile-icon">
-                <img class="icon-img" src="/images/web-icon.PNG" alt="">
-                <p id="skills_icon">Web Development</p>
-            </div>
-            <div class="backend-icon">
-                <img class="icon-img3" src="/images/backend.PNG" alt="">
-                <p id="skills_icon">Backend Development</p>
-            </div>
-        </div>
-
-    </section> -->
-
 
     <section id="about" class="about">
         <div class="my-about">
@@ -77,21 +62,21 @@
             </div>
             <div class="container">
                 <div class="card-deck">
-                    <div class="card-body">
+                    <div class="card-body  small-12 medium-6 large-3">
                         <img id="skills-icon" src="/images/app.svg" alt="">
                         <h5 class="card-title" id="card-title">Mobile Development</h5>
                         <p class="card-text  text-center">Develop mobile application in Kotlin on Android Studio</p>
 
                     </div>
 
-                    <div class="card-body text-center">
+                    <div class="card-body text-center  small-12 medium-6 large-3">
                         <img id="skills-icon" src="/images/web.svg" alt="">
                         <h5 class="card-title" id="card-title">Web Development</h5>
                         <p class="card-text">Develop web applications in HTML/CSS,Bootstrap,JavaScript and React on Visual Studio</p>
 
                     </div>
 
-                    <div class="card-body text-center">
+                    <div class="card-body text-center  small-12 medium-6 large-3">
                         <img id="skills-icon" src="/images/backend.svg" alt="">
                         <h5 class="card-title" id="card-title">Backend Development</h5>
                         <p class="card-text">Create database in python and integrate frontend in django</p>
@@ -112,22 +97,25 @@
         <div class="container">
             <div class="card-deck">
                 <div class="card">
+                    <img id="project-image" src="/images/mewdwins.PNG" alt="">
                     <div class="card-body text-center">
-                        <img id="project-image" src="/images/mewdwins.PNG" alt="">
                         <h5 class="card-text">Medwin's Care</h5>
+                        <a id="view-project" href="https://juliet879.github.io/Medwin-Cares-Hospital/">VIEW</a>
                     </div>
                 </div>
                 <div class="card">
+                    <img id="project-image" src="/images/photoApp.PNG" alt="">
                     <div class="card-body text-center">
-                        <img id="project-image" src="/images/photoApp.PNG" alt="">
                         <h5 class="card-text">Picture Patch</h5>
-
+                        <a id="view-project" href="https://juliecollections.netlify.app">VIEW</a>
                     </div>
                 </div>
                 <div class="card">
+                    <img id="project-image" src="/images/project1.PNG" alt="">
                     <div class="card-body text-center">
-                        <img id="project-image" src="/images/project1.PNG" alt="">
                         <h5 class="card-text">Fresh Mboga</h5>
+                        <a id="view-project" href="https://fresh-veges.netlify.app">VIEW</a>
+
                     </div>
                 </div>
             </div>
@@ -135,22 +123,26 @@
         <div class="container">
             <div class="card-deck">
                 <div class="card">
+                    <img id="project-image" src="/images/notesapp.PNG" alt="">
                     <div class="card-body text-center">
-                        <img id="project-image" src="/images/notesapp.PNG" alt="">
                         <h5 class="card-text">Notes App</h5>
+                        <a id="view-project" href="https://github.com/Juliet879/NotesApp">VIEW</a>
                     </div>
                 </div>
                 <div class="card">
+                    <img id="project-image" src="/images/project2.PNG" alt="">
                     <div class="card-body text-center">
-                        <img id="project-image" src="/images/project2.PNG" alt="">
                         <h5 class="card-text">Books Blogs</h5>
+                        <a id="view-project" href="https://julietgisemba.netlify.app/">VIEW</a>
                     </div>
                 </div>
 
                 <div class="card">
+                    <img id="project-image" src="/images/schoolsystem.PNG" alt="">
                     <div class="card-body text-center">
-                        <img id="project-image" src="/images/schoolsystem.PNG" alt="">
                         <h5 class="card-text">School System</h5>
+                        <a id="view-project" href="https://github.com/Juliet879/python_web">VIEW</a>
+
                     </div>
                 </div>
             </div>

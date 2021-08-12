@@ -1,0 +1,28 @@
+    /* @media only screen and (min-width:724px) {
+        html {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        * {
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .small-12 {
+            width: 100%;
+        }
+        .heading {
+            background-color: rgb(5, 5, 5);
+            width: 100%;
+        }
+        #header2 {
+            padding-top: 4%;
+            margin: 4% 10%;
+        }
+        .about-word {
+            width: 25%;
+        }
+    } */
